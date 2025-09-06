@@ -276,7 +276,7 @@ function textReplace(string, article, disallowedChars = null) {
   for (const key in article) {
     if (article.hasOwnProperty(key) && key != "content") {
       let s = (article[key] || '') + '';
-      if (s && disallowedChars) s = this.generateValidFileName(s, disallowedChars);
+      if (s && disallowedChars) s = generateValidFileName(s, disallowedChars);
 
       string = string.replace(new RegExp('{' + key + '}', 'g'), s)
         .replace(new RegExp('{' + key + ':lower}', 'g'), s.toLowerCase())
