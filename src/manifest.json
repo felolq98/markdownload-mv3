@@ -77,25 +77,5 @@
       "description": "Copy current tab as Markdown to Obsidian"
     }
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["browser-polyfill.min.js", "contentScript/contentScript.js", "contentScript/content-processor.js"],
-      "run_at": "document_idle"
-    }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": [
-        "contentScript/pageContext.js",
-        "background/apache-mime-types.js",
-        "background/moment.min.js",
-        "background/turndown.js", 
-        "background/turndown-plugin-gfm.js",
-        "background/Readability.js",
-        "shared/default-options.js"
-      ],
-      "matches": ["<all_urls>"]
-    }
-  ]
+
 }
