@@ -76,6 +76,5 @@
     "copy_tab_to_obsidian": {
       "description": "Copy current tab as Markdown to Obsidian"
     }
-  },
-
+  }
 }
